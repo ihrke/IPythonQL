@@ -12,8 +12,8 @@
 		E9ECC88C180D74AE008A8C12 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9ECC88B180D74AE008A8C12 /* CoreServices.framework */; };
 		E9ECC88E180D74AE008A8C12 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9ECC88D180D74AE008A8C12 /* CoreFoundation.framework */; };
 		E9ECC894180D74AE008A8C12 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9ECC892180D74AE008A8C12 /* InfoPlist.strings */; };
-		E9ECC896180D74AE008A8C12 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = E9ECC895180D74AE008A8C12 /* GenerateThumbnailForURL.c */; };
-		E9ECC898180D74AE008A8C12 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = E9ECC897180D74AE008A8C12 /* GeneratePreviewForURL.c */; };
+		E9ECC896180D74AE008A8C12 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ECC895180D74AE008A8C12 /* GenerateThumbnailForURL.m */; };
+		E9ECC898180D74AE008A8C12 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ECC897180D74AE008A8C12 /* GeneratePreviewForURL.m */; };
 		E9ECC89A180D74AE008A8C12 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E9ECC899180D74AE008A8C12 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -25,8 +25,8 @@
 		E9ECC88D180D74AE008A8C12 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		E9ECC891180D74AE008A8C12 /* IPythonQL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IPythonQL-Info.plist"; sourceTree = "<group>"; };
 		E9ECC893180D74AE008A8C12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E9ECC895180D74AE008A8C12 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
-		E9ECC897180D74AE008A8C12 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		E9ECC895180D74AE008A8C12 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
+		E9ECC897180D74AE008A8C12 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		E9ECC899180D74AE008A8C12 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		E9ECC89B180D74AE008A8C12 /* IPythonQL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IPythonQL-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,8 +77,8 @@
 		E9ECC88F180D74AE008A8C12 /* IPythonQL */ = {
 			isa = PBXGroup;
 			children = (
-				E9ECC895180D74AE008A8C12 /* GenerateThumbnailForURL.c */,
-				E9ECC897180D74AE008A8C12 /* GeneratePreviewForURL.c */,
+				E9ECC895180D74AE008A8C12 /* GenerateThumbnailForURL.m */,
+				E9ECC897180D74AE008A8C12 /* GeneratePreviewForURL.m */,
 				E9ECC899180D74AE008A8C12 /* main.c */,
 				E9ECC890180D74AE008A8C12 /* Supporting Files */,
 			);
@@ -179,8 +179,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9ECC896180D74AE008A8C12 /* GenerateThumbnailForURL.c in Sources */,
-				E9ECC898180D74AE008A8C12 /* GeneratePreviewForURL.c in Sources */,
+				E9ECC896180D74AE008A8C12 /* GenerateThumbnailForURL.m in Sources */,
+				E9ECC898180D74AE008A8C12 /* GeneratePreviewForURL.m in Sources */,
 				E9ECC89A180D74AE008A8C12 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

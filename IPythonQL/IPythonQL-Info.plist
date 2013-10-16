@@ -4,6 +4,28 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
+    
+    <key>UTImportedTypeDeclarations</key>
+    <array>
+        <dict>
+            <key>UTTypeIdentifier</key>
+            <string>be.ipynb.quicklook</string>
+            <key>UTTypeDescription</key>
+            <string>ipynb document</string>
+            <key>UTTypeConformsTo</key>
+            <array>
+                <string>public.data</string>
+            </array>
+            <key>UTTypeTagSpecification</key>
+            <dict>
+                <key>public.filename-extension</key>
+                <array>
+                    <string>ipynb</string>
+                </array>
+            </dict>
+        </dict>
+    </array>
+    
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
@@ -11,10 +33,11 @@
 			<string>QLGenerator</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>SUPPORTED_UTI_TYPE</string>
+				<string>be.ipynb.quicklook</string>
 			</array>
 		</dict>
 	</array>
+    
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
