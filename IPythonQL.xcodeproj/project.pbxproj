@@ -15,6 +15,7 @@
 		E9ECC896180D74AE008A8C12 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ECC895180D74AE008A8C12 /* GenerateThumbnailForURL.m */; };
 		E9ECC898180D74AE008A8C12 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ECC897180D74AE008A8C12 /* GeneratePreviewForURL.m */; };
 		E9ECC89A180D74AE008A8C12 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E9ECC899180D74AE008A8C12 /* main.c */; };
+		E9F46E09180EDFF900F50BC5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E9F46E08180EDFF900F50BC5 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		E9ECC897180D74AE008A8C12 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		E9ECC899180D74AE008A8C12 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		E9ECC89B180D74AE008A8C12 /* IPythonQL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IPythonQL-Prefix.pch"; sourceTree = "<group>"; };
+		E9F46E08180EDFF900F50BC5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				E9ECC895180D74AE008A8C12 /* GenerateThumbnailForURL.m */,
 				E9ECC897180D74AE008A8C12 /* GeneratePreviewForURL.m */,
+				E9F46E08180EDFF900F50BC5 /* README.md */,
 				E9ECC899180D74AE008A8C12 /* main.c */,
 				E9ECC890180D74AE008A8C12 /* Supporting Files */,
 			);
@@ -158,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F46E09180EDFF900F50BC5 /* README.md in Resources */,
 				E9ECC894180D74AE008A8C12 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +316,7 @@
 				E9ECC8A0180D74AE008A8C12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

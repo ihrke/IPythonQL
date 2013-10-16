@@ -77,8 +77,18 @@ NSString* getIPython(){
         [task launch];
         NSData *data = [file readDataToEndOfFile];
         NSString* ipython = [NSString stringWithUTF8String:[data bytes]];
-        ipython=[ipython stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-        ipython=[ipython stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+//        ipython=[ipython stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+//        ipython=[ipython stringByReplacingOccurrencesOfString:@"\\n" withString:@""];
+    
+
+    // my own implementation of removing the trailing \n that is sometimes there and sometimes not
+    //  for some reason the fancy NS-functions above fail... wtf??
+    char *ip=(char*)[ipython UTF8String];
+    for(int i=0; i<strlen(ip); i++ ){
+        if(ip[i]=='\n')
+            ip[i]='\0';
+    }
+    ipython=[NSString stringWithUTF8String:ip];
     
         if(debug) NSLog(@"fct(IPython)='%@'", ipython);
         return ipython;
@@ -104,9 +114,12 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
         NSString *ipython=getIPython();
         if(debug) NSLog(@"IPython='%@'", ipython);
         
-//        ipython=@"/Library/Frameworks/Python.framework/Versions/2.7/bin/ipython";
+            //ipython=@"/Library/Frameworks/Python.framework/Versions/2.7/bin/ipython";
 
         [task setLaunchPath: ipython]; //@"ipython"];
+        
+        BOOL exists = [[NSFileManager defaultManager] isReadableFileAtPath:[task launchPath]];//  isExecutableFileAtPath:[task launchPath]];
+        NSLog(@"%@ '%@'\n", exists ? @"Exists" : @"Does Not Exist", [task launchPath]);
         
         NSArray *arguments;
         arguments = [NSArray arrayWithObjects: @"nbconvert", @"--to", @"html", @"--output=/tmp/blubberdiblubb123", fullpath, nil];
