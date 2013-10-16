@@ -4,28 +4,26 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
-    
-    <key>UTImportedTypeDeclarations</key>
-    <array>
-        <dict>
-            <key>UTTypeIdentifier</key>
-            <string>be.ipynb.quicklook</string>
-            <key>UTTypeDescription</key>
-            <string>ipynb document</string>
-            <key>UTTypeConformsTo</key>
-            <array>
-                <string>public.data</string>
-            </array>
-            <key>UTTypeTagSpecification</key>
-            <dict>
-                <key>public.filename-extension</key>
-                <array>
-                    <string>ipynb</string>
-                </array>
-            </dict>
-        </dict>
-    </array>
-    
+	<key>UTImportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>be.ipynb.quicklook</string>
+			<key>UTTypeDescription</key>
+			<string>ipynb document</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>ipynb</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
@@ -37,7 +35,6 @@
 			</array>
 		</dict>
 	</array>
-    
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
@@ -73,13 +70,15 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2013 Matthias Mittner. All rights reserved.</string>
 	<key>QLNeedsToBeRunInMainThread</key>
-	<false/>
+	<true/>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>QLPreviewHeight</key>
 	<real>600</real>
 	<key>QLPreviewWidth</key>
 	<real>800</real>
 	<key>QLSupportsConcurrentRequests</key>
-	<false/>
+	<true/>
 	<key>QLThumbnailMinimumSize</key>
 	<real>17</real>
 </dict>
